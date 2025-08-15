@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 # Load trained model
-with open("churn_model.pkl", "rb") as f:
+with open("best_churn_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 st.set_page_config(page_title="Churn Prediction App", page_icon="📊", layout="wide")
@@ -21,3 +21,4 @@ if st.sidebar.button("Predict"):
                             columns=["gender", "tenure", "MonthlyCharges"])
     prediction = model.predict(input_df)[0]
     st.success(f"Prediction: **{'Churn' if prediction == 1 else 'No Churn'}**")
+
