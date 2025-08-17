@@ -32,7 +32,7 @@ Analysis of a dataset to determine the reasons customers are leaving a particula
 ##  Deployment
 
 The project is deployed using **Streamlit** and hosted online.
-🔗 **Live Demo**: [Click Here](https://your-render-link-here.com)
+🔗 **Live Demo**: [Click Here](https://customer-churn-prediction-dcke.onrender.com)
 
 ---
 
